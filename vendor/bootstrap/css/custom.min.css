@@ -76,3 +76,14 @@
 	width: 100%;
 	height: 100%;
 }
+
+.badge.badge-outlined {
+  background-color: transparent;
+  border-width:  1px;
+  border-style: solid;
+}
+
+.badge.badge-outlined.badge-primary {
+  border-color: #0069d9;
+  color: #0069d9
+}
