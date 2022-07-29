@@ -8,8 +8,8 @@
 
 /* The ribbons */
 .ribbon {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   overflow: hidden;
   position: absolute;
 }
@@ -26,12 +26,13 @@
   display: block;
   width: 180px;
   padding: 5px 0;
-  background-color: #EE7942;
+  background-color: #0069d9;
   box-shadow: 0 5px 10px rgba(0,0,0,.1);
   color: #fff;
-  /*font: 700 10px/1;*/
+  font-size: 12px;
+  font-weight: bold;
   text-shadow: 0 1px 1px rgba(0,0,0,.2);
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
   text-align: center;
 }
 
