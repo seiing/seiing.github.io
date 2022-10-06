@@ -23,6 +23,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/scramble.js"></script>
 </head>
 
 <body>
@@ -101,12 +102,20 @@
                 <h2 class="mt-2">Contact Me</h2>
                 <div class="my-3">
                 <address>
-                    <abbr title="Email">E1:</abbr> 1616seiing at gmail.com
+                    <b>Email:</b>
                     <br>
-                    <abbr title="Email">E2:</abbr> seiing at mrl.snu.ac.kr
-                    <br>
+                    <font id="email" style="display:inline;">
+                        <a href="#" onclick="emailScramble.initAnimatedBubbleSort();return false;">unscramble</a>
+                    </font>
+                    <script>
+                    emailScramble = new scrambledString(document.getElementById('email'),
+                    'emailScramble', '1@egaicisn.m6mo1l6gi',
+                    [2, 10, 5, 9, 13, 6, 17, 7, 4, 8, 16, 12, 1, 19, 18, 0, 15, 3, 11, 14]);
+                    </script> 
                 </address>
                 <address>
+                    <b>Sites:</b>
+                    <br>
                     <a href="https://github.com/seiing" target="_blank" class="btn azm-social azm-size-64 azm-circle azm-github" style="color: white">
                     <i class="fa fa-github"></i>
                     </a>
@@ -135,7 +144,7 @@
         <div class="row">
             <div class="col-sm-4 my-4">
                 <div class="card">
-                   <div class="ribbon ribbon-top-left"><span>To be appeared</span></div>
+                   <!-- <div class="ribbon ribbon-top-left"><span>To be appeared</span></div> -->
                    <img class="card-img-top" src="image/gaitnet.jpg" alt="">
                    <div class="card-body">
                         <h4 class="card-title">Generative GaitNet</h4>
@@ -293,7 +302,7 @@
         <h2 class="mt-4">Timeline</h2>
             <ul class="timeline">
             
-            <li>
+            <li class="timeline-inverted">
                 <div class="timeline-badge">
                 <img class="img-circle img-responsive img-center" src="image/logo/meta.jpg" alt="">
                 </div>
@@ -312,7 +321,7 @@
                 </div>
             </li>
 
-            <li class="timeline-inverted">
+            <li class="timeline-badge">
                 <div class="timeline-badge">
                 <img class="img-circle img-responsive img-center" src="image/logo/nvidia.png" alt="">
                 </div>
@@ -330,25 +339,6 @@
                 </div>
             </li>
 
-            <li>
-                <div class="timeline-badge">
-                <img class="img-circle img-responsive img-center" src="image/logo/snu.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Researcher @ Movement Research Lab</h4>
-                        <p><small class="text-muted"></i> 2015 - Current</small></p>
-                    </div>
-                    <div class="timeline-body">
-                        <h4 class="padded-title">
-                            <span style="background-color:#FF3377">#ComputerAnimation</span> 
-                            <span style="background-color:#7486F9">#DeepLearning</span> 
-                            <span style="background-color:#1ad2c7">#Biomechanics</span>
-                        </h4>
-                    </div>
-                </div>
-            </li>
-        
             <li class="timeline-inverted">
                 <div class="timeline-badge">
                 <img class="img-circle img-responsive img-center" src="image/logo/skp.png" alt="">
@@ -504,17 +494,6 @@
             </div>
             <div class="col-sm-4 my-3">
                 <div class="card">
-                <img src="image/fast-forward.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <blockquote class="blockquote text-right" style="margin-bottom: 0rem;">
-                  <p class="mb-0">🐙 SoftCon: Fast Forward</p>
-                  <footer class="blockquote-footer">2019.11.17</footer>
-                </blockquote>
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-4 my-3">
-                <div class="card">
                 <img src="image/IMG_5482.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                 <blockquote class="blockquote text-right" style="margin-bottom: 0rem;">
@@ -524,8 +503,6 @@
                 </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-sm-4 my-3">
                 <div class="card">
                 <img src="image/IMG_0292.JPG" class="card-img-top" alt="...">
@@ -537,6 +514,8 @@
                 </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
             <div class="col-sm-4 my-3">
                 <div class="card">
                 <img src="image/IMG_7714.jpeg" class="card-img-top" alt="...">
@@ -559,8 +538,6 @@
                 </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-sm-4 my-3">
                 <div class="card">
                 <img src="image/IMG_2625.JPG" class="card-img-top" alt="...">
@@ -573,6 +550,8 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="row">
+        </div> -->
         
         <br>
         <br>
@@ -583,7 +562,7 @@
     <!-- Footer -->
     <footer class="py-sm-3 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Sehee Min <br> Latest updated: February 2022</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Sehee Min <br> Latest updated: October 2022</p>
         </div>
         <!-- /.container -->
     </footer>
